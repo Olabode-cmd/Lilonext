@@ -84,6 +84,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
   padding-top: 0 !important;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img {

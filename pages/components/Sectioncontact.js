@@ -1,9 +1,11 @@
 import React from 'react';
 import Contactimg from '../../public/images/illustrations/icon_6.svg';
+import Script from 'next/script';
 
 export default function Sectioncontact() {
   return (
     <div>
+          <Script src="../../public/js/contact.js" />
           <section className="section-contact" data-aos="fade-up">
               <div className="container">
                   <div className="row">

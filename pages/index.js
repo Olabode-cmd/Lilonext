@@ -9,9 +9,9 @@ import Sectionteam from './components/Sectionteam';
 import Sectionblockquote from './components/Sectionblockquote';
 import Sectionsupport from './components/Sectionsupport';
 import Sectioncontact from './components/Sectioncontact';
-// import './../styles/Bootstrap.module.css'
+import Footer from './components/Footer';
 
-
+// import Lilostyle from '../styles/Lilo.module.css';
 import NY from '../public/images/clients/NY.svg';
 import User from '../public/images/sarah-bishop.png';
 
@@ -24,8 +24,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Header /> */}
-      <h1>Lilo Next JS</h1>
+      <Header />
+      {/* <h1>Lilo Next JS</h1> */}
       <main>
         <Sectionhero />
 
@@ -51,6 +51,8 @@ export default function Home() {
         <Sectionsupport />
 
         <Sectioncontact />
+
+        <Footer />
       </main>
     </div>
   )
