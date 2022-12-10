@@ -23,14 +23,14 @@ export default function Footer() {
                           </div>
                       </div>
                       <div className={styles.right}>
-                          <div className={styles.menu}>
+                          <div className={styles.menus}>
                               <div className={[styles.menu_1, styles.menu]}>
                                   <div className={[styles.heading, styles['fi-03'], styles['fi-03-v04']].join(' ')}>
                                     <h4>Info</h4>
                                     <span className={styles.plus_minus_2_wrapper}>
                                         <span className={styles.plus_minus_2}></span></span>
                                   </div>
-                                  <ul classNme="fi-03 fi-03-v05" className={[styles['fi-03'], styles['fi-03-v05']].join(' ')}>
+                                  <ul className={[styles['fi-03'], styles['fi-03-v05']].join(' ')}>
                                       <li><a href="index.html">Home</a></li>
                                       <li><a href="services.html">Services</a></li>
                                       <li><a href="about.html">About</a></li>
@@ -38,49 +38,54 @@ export default function Footer() {
                                       <li><a href="contact.html">Contact</a></li>
                                   </ul>
                               </div>
-                              <div className={[styles.menu_2, styles.menu]}>
-                                  <div className="heading fi-03 fi-03-v04"><h4>Resources</h4><span className="plus_minus_2_wrapper"><span
-                                      className="plus_minus_2"></span></span>
+                              <div className={[styles.menu_2, styles.menu].join(' ')}>
+                                  <div className={[styles.heading, styles['fi-03'], styles['fi-03-v04']].join(' ')}>
+                                      <h4>Resources</h4>
+                                      <span className={styles.plus_minus_2_wrapper}>
+                                          <span className={styles.plus_minus_2}></span></span>
                                   </div>
-                                  <ul className="fi-03 fi-03-v05 footer_ul">
-                                      <li className='footer_li'><a href="roas-calculator.html">Calculator</a></li>
+                                  <ul className={[styles['fi-03'], styles['fi-03-v05']].join(' ')}>
+                                      <li><a href="roas-calculator.html">Calculator</a></li>
                                   </ul>
                               </div>
-                              <div className="menu_3 menu">
-                                  <div className="heading fi-03 fi-03-v04"><h4>Follow Us</h4><span className="plus_minus_2_wrapper"><span
-                                      className="plus_minus_2"></span></span>
+                              <div className={[styles.menu_3, styles.menu].join(' ')}>
+                                  <div className={[styles.heading, styles['fi-03'], styles['fi-03-v04']].join(' ')}>
+                                    <h4>Follow Us</h4>
+                                      <span className={styles.plus_minus_2_wrapper}><span
+                                          className={styles.plus_minus_2}></span></span>
                                   </div>
-                                  <ul className="fi-03 fi-03-v05 footer_ul">
-                                      <li className='footer_li'><a href="#" className='footer_a' target="_blank">Linkedin</a></li>
-                                      <li className='footer_li'><a href="#" className='footer_a' target="_blank">Dribbble</a></li>
+                                  <ul className={[styles['fi-03'], styles['fi-03-v05']].join(' ')}>
+                                      <li><a href="#" target="_blank">Linkedin</a></li>
+                                      <li><a href="#" target="_blank">Dribbble</a></li>
                                   </ul>
                               </div>
                           </div>
-                          <div className="newsletter_wrapper dotbg">
-                              <div className="b12">
-                                  <div className="img_bg">
+                          <div className={[styles.newsletter_wrapper, styles.dotbg].join(' ')}>
+                              <div className={styles.b12}>
+                                  <div className={styles.img_bg}>
                                   </div>
-                                  <div className="content_wrapper">
-                                      <div className="heading fi-03 fi-03-v04"><h4>Newsletter</h4></div>
-                                      <div className="content fi-03 fi-03-v05">
-                                          <p className='footer_p'>Subscribe for the latest Lilo Social news &amp; case studies</p>
+                                  <div className={styles.content_wrapper}>
+                                      <div className={[styles.heading, styles['fi-03'], styles['fi-03-v04']].join(' ')}><h4>Newsletter</h4></div>
+                                      <div className={[styles.content, styles['fi-03'], styles['fi-03-v05']].join(' ')}>
+                                          <p>Subscribe for the latest Lilo Social news &amp; case studies</p>
                                       </div>
-                                      <div className="b_form b_form_mailchimp">
+                                      <div className={[styles.b_form, styles.b_form_mailchimp].join(' ')}>
                                           {/* <!-- Begin Mailchimp Signup Form --> */}
                                           <div id="mc_embed_signup">
                                               <form action="#" id="newsletter-form">
                                                   <div id="mc_embed_signup_scroll">
-                                                      <div className="mc-field-group form_i_b">
-                                                          <input type="email" value="" name="EMAIL" className="required email"
+                                                      <div className={[styles.form_i_b, styles['mc-field-group']].join(' ')}>
+                                                          <input type="email" value="" name="EMAIL" className={[styles.required, styles.email].join(' ')}
                                                               id="mce-EMAIL" placeholder="Type email address" />
                                                       </div>
                                                       {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
                                                       <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                                                          <input type="text" tabindex="-1" value="" />
+                                                          <input type="text" tabIndex="-1" value="" />
                                                       </div>
-                                                      <p className="hidden">Thank you for subscribing</p>
-                                                      <div className="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                                          id="mc-embedded-subscribe" className="fi-01 fi-01-v02 btn btn-outline mt-4 d-inline-block" />
+                                                      <p className={styles.hidden}>Thank you for subscribing</p>
+                                                      <div className={styles.clear}>
+                                                        <input type="submit" value="Subscribe" name="subscribe"
+                                                          id="mc-embedded-subscribe" className={[styles.btn, styles['fi-01'], styles['fi-01-v02'], styles['btn-outline'], styles['mt-4'], styles['d-inline-block']].join(' ')} />
                                                       </div>
                                                   </div>
                                               </form>
@@ -90,20 +95,20 @@ export default function Footer() {
                                   </div>
                               </div>
 
-                              <div className="dotimg"></div>
+                              <div className={styles.dotimg}></div>
                           </div>
-                          <div className="contact_info fi-03 fi-03-v05">
-                              <div className="c_i_1"><a href="#" target="_blank">175 Pearl St.
+                          <div className={[styles.contact_info, styles['fi-03'], styles['fi-03-v05']].join(' ')}>
+                              <div className={styles.c_i_1}><a href="#" target="_blank">175 Pearl St.
                                   Floors 1-3 <br />Brooklyn NY 11201</a></div>
-                              <div className="c_i_2"><a href="#">(347) 619-3312</a><br /><a
+                              <div className={styles.c_i_2}><a href="#">(347) 619-3312</a><br /><a
                                   href="#">hello@lilosocial.com</a></div>
                           </div>
                       </div>
                   </div>
-                  <div className="bottom">
-                      <div className="left-copy">© Lilo Social 2022 | <a href="privacy.html">Privacy Policy</a> | <a
+                  <div className={styles.bottom}>
+                      <div className={['left-copy']}>© Lilo Social 2022 | <a href="privacy.html">Privacy Policy</a> | <a
                           href="t&c.html">Terms & Conditions</a></div>
-                      <div className="right"> &nbsp;
+                      <div className={styles.right}> &nbsp;
                       </div>
                   </div>
               </div>

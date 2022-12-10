@@ -1,11 +1,14 @@
 import React from 'react';
+import Script from 'next/script';
 import Link from 'next/link';
 import Logo from '../../public/images/hero-logo.svg';
-import styles from '../../styles/Lilo.module.css'
+import styles from '../../styles/Lilo.module.css';
+// import '../../public/js/main05dd.js'
 
 export default function Header() {
   return (
     <div>
+
           <header className={styles.head_1}>
               <div className={styles.inner}>
                   <div className={styles.logo}>

@@ -86,7 +86,7 @@ export default function Sectionservices() {
 
                       <div className="idcard dotbg none-990">
                           <div>
-                              <img src="assets/images/illustrations/b16-br.png" alt="br" className="br" />
+                              <img src={BRPng.src} alt="br" className="br" />
                                   <p>
                                       Lilo has created amazing experiences for us and they always delivered on time. The ability to collaborate
                                       with Lilo
@@ -94,7 +94,7 @@ export default function Sectionservices() {
                                   </p>
 
                                   <div className="d-flex align-items-center">
-                                      <img src="assets/images/illustrations/Doug-Bernstein.png" alt="person doug" />
+                                      <img src={Doug.src} alt="person doug" />
 
                                           <div className="flex-column d-flex ms-3">
                                               <h3 className="m-1">Doug Bernstein</h3>

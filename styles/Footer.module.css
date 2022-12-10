@@ -11190,12 +11190,12 @@ body .b_form .gform_wrapper ul li.gfield {
 }
 
 .foot_1 .right {
-    display: flex;
+    display: flex !important;
     align-items: flex-start;
 }
 
 .foot_1 .menus {
-    display: flex;
+    display: flex !important;
 }
 
 .foot_1 .menus>div {

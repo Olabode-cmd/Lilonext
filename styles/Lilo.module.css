@@ -50,6 +50,7 @@
 .nav ul a {
     margin-left: 29px;
     position: relative;
+    color: #000;
 }
 
 .nav ul li a:after {
