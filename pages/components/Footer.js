@@ -75,16 +75,16 @@ export default function Footer() {
                                               <form action="#" id="newsletter-form">
                                                   <div id="mc_embed_signup_scroll">
                                                       <div className={[styles.form_i_b, styles['mc-field-group']].join(' ')}>
-                                                          <input type="email" value="" name="EMAIL" className={[styles.required, styles.email].join(' ')}
+                                                          <input type="email" defaultValue="" name="EMAIL" className={[styles.required, styles.email].join(' ')}
                                                               id="mce-EMAIL" placeholder="Type email address" />
                                                       </div>
                                                       {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
                                                       <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                                                          <input type="text" tabIndex="-1" value="" />
+                                                          <input type="text" tabIndex="-1" defaultValue="" />
                                                       </div>
                                                       <p className={styles.hidden}>Thank you for subscribing</p>
                                                       <div className={styles.clear}>
-                                                        <input type="submit" value="Subscribe" name="subscribe"
+                                                        <input type="submit" defaultValue="Subscribe" name="subscribe"
                                                           id="mc-embedded-subscribe" className={[styles.btn, styles['fi-01'], styles['fi-01-v02'], styles['btn-outline'], styles['mt-4'], styles['d-inline-block']].join(' ')} />
                                                       </div>
                                                   </div>

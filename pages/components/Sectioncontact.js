@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Contactimg from '../../public/images/illustrations/icon_6.svg';
 import Script from 'next/script';
+import '../../public/js/contact.js'
 
 export default function Sectioncontact() {
+
+    useEffect(() => {
+        // Contact and Apply Form
+        document.querySelector('#apply-form, #contact-form').addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            document.querySelector('.formdiv').style.display = "none";
+            document.querySelector('.subdiv').style.display = "inline-block";
+        });
+
+        // Newsletter Form
+        document.querySelector('#newsletter-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            document.querySelector('p.hidden').style.display = "block"
+        })
+    })
   return (
     <div>
           <Script src="../../public/js/contact.js" />
@@ -26,36 +45,36 @@ export default function Sectioncontact() {
                       <div className="col-md-6 formdiv">
                           <form action="#" id="contact-form" name="contact">
                               <div className="form-group">
-                                  <label for="name">Name <span>*</span></label>
+                                  <label htmlFor="name">Name <span>*</span></label>
                                   <input type="text" name="name" id="name" placeholder="Type Name" required />
                               </div>
 
                               <div className="form-group">
-                                  <label for="company">Company Name <span>*</span></label>
+                                  <label htmlFor="company">Company Name <span>*</span></label>
                                   <input type="text" name="company" id="company" placeholder="Type Company Name" required />
                               </div>
 
                               <div className="form-group">
-                                  <label for="phone">Phone</label>
+                                  <label htmlFor="phone">Phone</label>
                                   <input type="number" name="phone" id="phone" placeholder="Type Phone Number" />
                               </div>
 
                               <div className="form-group">
-                                  <label for="email">Email Address <span>*</span></label>
+                                  <label htmlFor="email">Email Address <span>*</span></label>
                                   <input type="email" name="email" id="email" placeholder="Type Email Address" required />
                               </div>
 
                               <div className="form-group">
-                                  <label for="help">How can we help? <span>*</span></label>
+                                  <label htmlFor="help">How can we help? <span>*</span></label>
                                   <textarea name="help" id="help" placeholder="A brief description here" required></textarea>
                               </div>
 
                               <div className="form-group">
-                                  <label for="services">Services <span>*</span></label>
+                                  <label htmlFor="services">Services <span>*</span></label>
 
                                   <div className="row mt-2">
                                       <div className="col-md-6 col-sm-12">
-                                          <label for="cbx-1" className="label-cbx">
+                                          <label htmlFor="cbx-1" className="label-cbx">
                                               <input id="cbx-1" type="checkbox" className="invisible" />
                                                   <div className="checkbox">
                                                       <svg width="20px" height="20px" viewBox="0 0 20 20">
@@ -70,7 +89,7 @@ export default function Sectioncontact() {
                                       </div>
 
                                       <div className="col-md-6 col-sm-12">
-                                          <label for="cbx-2" className="label-cbx">
+                                          <label htmlFor="cbx-2" className="label-cbx">
                                               <input id="cbx-2" type="checkbox" className="invisible" />
                                                   <div className="checkbox">
                                                       <svg width="20px" height="20px" viewBox="0 0 20 20">
@@ -85,7 +104,7 @@ export default function Sectioncontact() {
                                       </div>
 
                                       <div className="col-md-6 col-sm-12">
-                                          <label for="cbx-3" className="label-cbx">
+                                          <label htmlFor="cbx-3" className="label-cbx">
                                               <input id="cbx-3" type="checkbox" className="invisible" />
                                                   <div className="checkbox">
                                                       <svg width="20px" height="20px" viewBox="0 0 20 20">
@@ -100,7 +119,7 @@ export default function Sectioncontact() {
                                       </div>
 
                                       <div className="col-md-6 col-sm-12">
-                                          <label for="cbx-4" className="label-cbx">
+                                          <label htmlFor="cbx-4" className="label-cbx">
                                               <input id="cbx-4" type="checkbox" className="invisible" />
                                                   <div className="checkbox">
                                                       <svg width="20px" height="20px" viewBox="0 0 20 20">
@@ -117,7 +136,7 @@ export default function Sectioncontact() {
 
                               </div>
 
-                              <input type="submit" value="Send message" id="contactsubmit" className="btn primary-btn" />
+                              <input type="submit" defaultValue="Send message" id="contactsubmit" className="btn primary-btn" />
 
 
                           </form>

@@ -21,10 +21,8 @@ export default function Sectionhero() {
                             </div>
                         </div>
                         <div className="col-md-6 video">
-                            {/* <!-- <span>&nbsp;</span> --> */}
-                            {/* <video src={'../../public/videos/LiloSocial_website_header_1_504x1092_110121_V3.mp4'} className="align-self-end" autoPlay muted loop /> */}
                             <video className="align-self-end" autoPlay muted loop>
-                                <source src={'../../public/videos/LiloSocial_website_header_1_504x1092_110121_V3.mp4'} />
+                                <source src={'/videos/LiloSocial_website_header_1_504x1092_110121_V3.mp4'} />
                             </video>
                             <img src={Phonecase.src} alt="phone case" className="absolute-img" />
                         </div>

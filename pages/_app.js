@@ -17,12 +17,15 @@ function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      {/* <Script src="js/main05dd.js"
+      {/* <Script src="/js/main05dd.js" strategy='worker'
         onLoad={() => {
           console.log('Script has loaded')
         }} />
-      <Script src="js/main6669.js" />
-      <Script src="js/contact.js" /> */}
+      <Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" strategy='worker'
+        onLoad={() => {
+          console.log('Jquery has loaded')
+        }} /> */}
+  
     </>
   
   )
